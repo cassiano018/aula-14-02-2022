@@ -1,0 +1,7 @@
+{
+  "name": "@wcd/cassiano018.aula-14-02-2022",
+  "version": "0.0.0",
+  "scripts": {
+    "serve": "npx wcd-cli@latest serve n5rTwKwG0Z8xoeZ7AwsA --open"
+  }
+}

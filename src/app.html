@@ -1,0 +1,57 @@
+<template>
+
+  <lightning-card>
+    <div class="slds-m-around_medium">
+      <h1 class="slds-text-heading_large">
+        Estrutura de Dados
+      </h1>
+    </div>
+
+    <div class="slds-m-around_medium slds-text-smaller">
+      <p><strong>Nome: </strong>{pessoa.nome}</p>
+      <p><strong>Telefone: </strong>{pessoa.tel}</p>
+      <p><strong>Idade: </strong>{pessoa.idade}</p>
+      <p><strong>Status: </strong>{pessoa.status}</p>
+    </div>
+
+  </lightning-card>
+
+  <lightning-card>
+    <div class="slds-m-around_medium">
+      <h1 class="slds-text-heading_large">
+        Meus pokemons
+      </h1>
+    </div>
+
+    <template for:each={pokemons} for:item="poke">
+      <div key={poke.cod}>
+        <p><strong>Nome: </strong>{poke.nome}</p>
+        <p><strong>Tipo: </strong>{poke.tipo}</p>
+        <p><strong>Nível: </strong>{poke.nivel}</p>
+        <br/>
+      </div>
+    </template>
+  </lightning-card>
+
+  <lightning-card>
+    <div class="slds-m-around_medium">
+      <h1 class="slds-text-heading_large">
+        Caverna do Dragão
+      </h1>
+    </div>
+
+    <template for:each={caverDragao} for:item="cav">
+      <div key={cav.cod}>
+        <p><strong>Nome: </strong>{cav.nome}</p>
+        <p><strong>Arma: </strong>{cav.arma}</p>
+        <p><strong>Força: </strong>{cav.forca}</p>
+        <p><strong>Agilidade: </strong>{cav.agilidade}</p>
+        <p><strong>Inteligência: </strong>{cav.inteligência}</p>
+        <p><strong>Estamina: </strong>{cav.estamina}</p>
+        <br/>
+      </div>
+    </template>
+  </lightning-card>
+
+
+</template>
